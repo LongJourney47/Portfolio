@@ -1,6 +1,6 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from 'Components/Navbar'
 import Home from 'Pages/Home'
 import About from 'Pages/About'
 import Projects from 'Pages/Projects'
@@ -12,46 +12,8 @@ const App = () => {
   // router is should be the highest tag in the file that will encompass all components
     return <Router>
       {/* ======== the nav bar appears on all pages  ======== */}
-     
-     <header> 
-      <nav >
-  <aside > 
-  <span>
-  <p>PlaceHolder</p>
-  </span>
-  
-  </aside>
-        <aside >
-          <ul>
-            <li>
-            <Link  to="/" >
-             Home 
-              </Link>
-            </li>
-            
-          
-            <li>
-            <Link  to="/About" > 
-          <span>About </span> </Link>
-            </li>
-            
-          <span>
-            <li>
-            <Link  to="/Skills" >
-           Skills  </Link>
-            </li>
-            </span>
-          
-            <li>
-            <Link  to="/Projects" >
-            Projects </Link>
-            </li>
-            
-  </ul>
-        </aside >
-      </nav>
-     </header>
-
+    
+      <Navbar />
 
       <Routes>
         {/*=========== Each route is treated as a page    ============= */}
