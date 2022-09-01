@@ -18,10 +18,16 @@ const Home = () => {
     <p>Over the course of my jounrey into software development, I have attained and applied a wealth of knowledge to create thoughtful applications. </p>
   </section>
 
-  
-  {/* src='Images/Maroon-Bells-Sunset.jpg' */}
-  {/* <img    className={Styles.Maroon}/> */}
+  <aside className={Styles.LeftSidePanel}>
+    <div className={Styles.Email}>
+    <a href='mailto:fernandezjw07@gmail.com'>fernandezjw07@gmail.com  </a>
+    </div>
+  </aside>
 
+  <aside className={Styles.RightSidePanel}>
+    <div className={Styles.Contacts}></div>
+  </aside>
+  
   </main>
   </>
   )
