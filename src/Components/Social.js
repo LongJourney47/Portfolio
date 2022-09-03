@@ -8,7 +8,7 @@ export default function Social() {
 
     return(
         <>
-        <IconContext.Provider  value={{ size:'2em' }}>
+        <IconContext.Provider  value={{ size:'1.75em' }}>
 <aside className={Styles.RightSidePanel}>
 <ul className={Styles.SocialContacts}>
     <li>

@@ -1,29 +1,37 @@
 .LeftSidePanel {
-    width: 40px;
+    /* width: 40px;
 position: fixed;
 bottom: 0px;
 left: auto;
 right: 40px;
+z-index: 10; */
+bottom: 0px;
+left: auto;
 z-index: 10;
+right: 40px;
+position: fixed;
+width: 40px;
+
+
 
 }
 
 .Email {
-    display: flex;
-flex-direction: column;
--moz-box-align: center;
 align-items: center;
+display: flex;
 position: relative;
-
+flex-direction: column;
 }
 
 .Email a {
-    margin: 20px auto;
-padding: 10px;
+   
 font-family: 'Courier New', Courier, monospace;
 letter-spacing: 0.1em;
 writing-mode: vertical-rl;
-text-decoration-style: none;
+/* text-decoration-style: none; */
+letter-spacing: 0.1em;
+padding: 10px;
+margin: 20px auto;
 }
 
 .Email a:link {
@@ -34,3 +42,14 @@ text-decoration-style: none;
 .Email a:visited {
     color: #52b69a;
 } 
+
+.Email::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    margin: 0px auto;
+    background-color:  #52b69a;
+   
+}
+
