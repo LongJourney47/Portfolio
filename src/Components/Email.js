@@ -7,6 +7,7 @@ export default function Email() {
           <aside className={Styles.LeftSidePanel}>
     <div className={Styles.Email}>
     <a href='mailto:fernandezjw07@gmail.com'>fernandezjw07@gmail.com  </a>
+   
     </div>
   </aside>
 
