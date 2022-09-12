@@ -1,0 +1,76 @@
+.TSTitle {
+margin:.5em;
+display: flex;
+justify-content: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    width: 67%;
+    box-shadow: 1px 2px 3px rgba(18, 17, 17, 0.806);
+    
+}
+
+.TechSkills {
+    /* border: 2px solid red; */
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto;
+    padding:0em;
+   width:70%;
+   display: block;
+   height: 100%;
+   align-content: center;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.Technologies {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+   
+}
+
+.Technologies li {
+    display: inline;
+position: relative;
+padding:0.5em;
+margin: 0.5em;
+width: 25%;
+height:60%
+
+}
+
+.InfoCard {
+  
+flex-direction: column;
+display:flex;
+font-size: 13px;
+
+margin: 0;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+
+li h3 {
+    background-color: #343a40;
+    margin: 0;
+}
+
+li p {
+  background-color: #343a40;
+   margin: 0;
+   font-size: 14px;
+   padding: .5em;
+}
+
+.CardImage {
+   padding: 3em 0em;
+   background-color: #5a5e65;
+
+}
+

@@ -1,6 +1,8 @@
 import React from 'react'
 import {  Link } from "react-router-dom";
 import Styles from '../Styles/Navbar.module.css'
+import Email from 'Components/Email'
+import Social from 'Components/Social'
 
 
 const Navbar = () => {
@@ -46,6 +48,8 @@ const Navbar = () => {
      </header>
 
 
+     <Email/>
+  <Social/>
    
 
   </>
