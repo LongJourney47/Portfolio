@@ -56,6 +56,10 @@ text-overflow: ellipsis;
 
 }
 
+.CardImage:hover {
+    background-color: #6c757d;
+}
+
 li h3 {
     background-color: #343a40;
     margin: 0;
