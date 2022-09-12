@@ -36,6 +36,11 @@ body {
       
     }
 
+    .LinkStyles {
+        height: 100vh;
+      
+    }
+
     .Links ul li {
         list-style: none;
         display: inline-block;

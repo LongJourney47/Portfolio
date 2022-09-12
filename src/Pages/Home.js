@@ -1,7 +1,8 @@
 import React from 'react'
 import Styles from '../Styles/Home.module.css' 
-import Email from 'Components/Email'
-import Social from 'Components/Social'
+
+// import Skills from './Skills'
+
 
 const Home = () => {
   
@@ -21,10 +22,11 @@ const Home = () => {
   </section>
 
 
- <Email/>
-  <Social/>
-
   </main>
+
+
+{/* 
+  <Skills/> */}
   </>
   )
   }
