@@ -8,6 +8,9 @@ const Projects = () => {
   return (
     <>
   <h2>Project Page</h2>
+  <hr></hr>
+
+
   </>
   )
 }

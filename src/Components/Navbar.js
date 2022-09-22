@@ -3,6 +3,8 @@ import {  Link } from "react-router-dom";
 import Styles from '../Styles/Navbar.module.css'
 import Email from 'Components/Email'
 import Social from 'Components/Social'
+import { TbLetterW } from "react-icons/tb";
+import { IconContext } from "react-icons";
 
 
 const Navbar = () => {
@@ -11,8 +13,10 @@ const Navbar = () => {
   <header> 
       <nav className={Styles.Navbar}>
   <aside className={Styles.Title}> 
-  <span>
-  <p>PlaceHolder</p>
+  <span >
+  <IconContext.Provider  value={{ size:'2em', color: '#71eccbe4' }}>
+    <TbLetterW className={Styles.Wletter}/>
+    </IconContext.Provider>
   </span>
   
   </aside>
