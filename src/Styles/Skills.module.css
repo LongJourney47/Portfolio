@@ -60,14 +60,14 @@ text-overflow: ellipsis;
     background-color: #6c757d;
 }
 
-li h3 {
+.Technology h3 {
     background-color: #343a40;
     margin: 0;
     padding: .4em;
     font-family: 'Courier New', Courier, monospace;
 }
 
-li p {
+.Technology p {
   background-color: #343a40;
    margin: 0;
    font-size: 16px;
@@ -82,5 +82,4 @@ li p {
    justify-content: center;
 
 }
-
 
