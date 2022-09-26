@@ -1,13 +1,13 @@
 import React from 'react'
 import Styles from '../Styles/Skills.module.css'
-import myJSSvg from '../Images/javascript-logo.svg'
-import myHTMLSvg from '../Images/html-5-logo.svg'
-import myCSSSvg from '../Images/css-3-logo.svg'
-import myReactSvg from '../Images/react-logo.svg'
-import myFirebaseSvg from '../Images/firebase-logo.svg'
-import myPythonSvg from '../Images/python-logo.svg'
-import myPostgreSQLSvg from '../Images/postgresql-logo.svg'
-import myGitSvg from '../Images/git-logo.svg'
+import myJSSvg from '../Images/Svg/javascript-logo.svg'
+import myHTMLSvg from '../Images/Svg/html-5-logo.svg'
+import myCSSSvg from '../Images/Svg/css-3-logo.svg'
+import myReactSvg from '../Images/Svg/react-logo.svg'
+import myFirebaseSvg from '../Images/Svg/firebase-logo.svg'
+import myPythonSvg from '../Images/Svg/python-logo.svg'
+import myPostgreSQLSvg from '../Images/Svg/postgresql-logo.svg'
+import myGitSvg from '../Images/Svg/git-logo.svg'
 
 
 const Skills = () => {
@@ -19,7 +19,7 @@ const Skills = () => {
 
 <section className={Styles.TechSkills}>
   <ul className={Styles.Technologies}>
-    <li>
+    <li className={Styles.Technology}>
     <h3>Javascript</h3>
       <div className={Styles.InfoCard}>
 
@@ -36,7 +36,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
     <h3>HTML</h3>
       <div className={Styles.InfoCard}>
         <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target="_blank">
@@ -50,7 +50,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
     <h3>CSS</h3>
       <div className={Styles.InfoCard}>
 
@@ -66,7 +66,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
    <h3> React</h3>
       <div className={Styles.InfoCard}>
         <a href='https://reactjs.org/' target="_blank">
@@ -82,7 +82,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
     <h3>Firebase</h3>
       <div className={Styles.InfoCard}>
       <a href='https://firebase.google.com/docs/' target="_blank">
@@ -97,7 +97,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
     <h3>Python</h3>
       <div className={Styles.InfoCard}>
         <a href='https://www.python.org/about/' target="_blank">
@@ -111,7 +111,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
     <h3>PostgreSQL</h3>
       <div className={Styles.InfoCard}>
         <a href='https://www.postgresql.org/about/' target="_blank">
@@ -125,7 +125,7 @@ const Skills = () => {
         specified space provided.</p>
     </li>
 
-    <li>
+    <li className={Styles.Technology}>
    <h3>Git</h3>
       <div className={Styles.InfoCard}>
         <a href='https://git-scm.com/about' target="_blank">

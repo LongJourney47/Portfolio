@@ -29,7 +29,8 @@ font-family: 'Courier New', Courier, monospace;
 letter-spacing: 0.1em;
 writing-mode: vertical-rl;
 /* text-decoration-style: none; */
-letter-spacing: 0.1em;
+/* font-size: 1em; */
+
 padding: 10px;
 margin: 20px auto;
 }

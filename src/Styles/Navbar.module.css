@@ -14,7 +14,7 @@ body {
     height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    text-align: center;
+   
     box-shadow: 0px 4px 8px rgba(18, 17, 17, 0.806);
 
 }
@@ -29,6 +29,7 @@ body {
         flex:40%;
       
         text-decoration: none;
+        text-align: center; 
     }
 
     li {
@@ -86,3 +87,17 @@ body {
     
     
     }
+
+/* .Title span {
+    border: 2px solid red;
+} */
+.Wletter {
+    width: 20%;
+    height: 50px;
+    
+
+}
+
+.LinkStyles:current {
+    background-color: green;
+}
