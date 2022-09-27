@@ -44,6 +44,12 @@ margin: 20px auto;
     color: #52b69a;
 } 
 
+.Email a:hover {
+    color:#71eccbe4;
+    /* height:5em; */
+    transform: translateY(-10px);
+}
+
 .Email::after {
     content: "";
     display: block;

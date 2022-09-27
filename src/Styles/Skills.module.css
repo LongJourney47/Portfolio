@@ -38,7 +38,8 @@ hr {
     display: inline;
 position: relative;
 padding:0.5em;
-margin: 0.5em;
+/* margin:0.5em; */
+margin: 1em 0.5em 1em ;
 width: 25%;
 height:60%
 
@@ -65,6 +66,7 @@ text-overflow: ellipsis;
     margin: 0;
     padding: .4em;
     font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px 5px 0 0;
 }
 
 .Technology p {
@@ -73,6 +75,7 @@ text-overflow: ellipsis;
    font-size: 16px;
    padding: .5em;
    line-height: 1.2;
+   border-radius: 0 0 5px 5px;
 }
 
 .CardImage {
@@ -83,3 +86,25 @@ text-overflow: ellipsis;
 
 }
 
+.CardImage:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 2s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    right: 99%;
+    top: 20%;
+}
+
+.CardImage:hover:before {
+    opacity: 1;
+    visibility: visible;
+}

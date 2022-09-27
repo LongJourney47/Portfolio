@@ -21,6 +21,12 @@ z-index: 10;
     margin: .75em
 }
 
+
+.SocialContacts li:hover {
+color: #71eccbe4;
+transform: translateY(-10px);
+}
+
 .SocialContacts li a {
     display: inline-block;
     text-decoration: none;
