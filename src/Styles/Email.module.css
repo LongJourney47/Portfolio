@@ -1,62 +1,56 @@
 .LeftSidePanel {
-    /* width: 40px;
+  /* width: 40px;
 position: fixed;
 bottom: 0px;
 left: auto;
 right: 40px;
 z-index: 10; */
-bottom: 0px;
-left: auto;
-z-index: 10;
-right: 40px;
-position: fixed;
-width: 40px;
-
-
-
+  bottom: 0px;
+  left: auto;
+  z-index: 10;
+  right: 40px;
+  position: fixed;
+  width: 40px;
 }
 
 .Email {
-align-items: center;
-display: flex;
-position: relative;
-flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
 }
 
 .Email a {
-   
-font-family: 'Courier New', Courier, monospace;
-letter-spacing: 0.1em;
-writing-mode: vertical-rl;
-/* text-decoration-style: none; */
-/* font-size: 1em; */
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  /* text-decoration-style: none; */
+  /* font-size: 1em; */
 
-padding: 10px;
-margin: 20px auto;
+  padding: 10px;
+  margin: 20px auto;
 }
 
 .Email a:link {
-    text-decoration: none;
-    color: #52b69a;
+  text-decoration: none;
+  color: #52b69a;
 }
 
 .Email a:visited {
-    color: #52b69a;
-} 
+  color: #52b69a;
+}
 
 .Email a:hover {
-    color:#71eccbe4;
-    /* height:5em; */
-    transform: translateY(-10px);
+  color: #71eccbe4;
+  /* height:5em; */
+  transform: translateY(-10px);
 }
 
 .Email::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 90px;
-    margin: 0px auto;
-    background-color:  #52b69a;
-   
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #52b69a;
 }
-

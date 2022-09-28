@@ -1,46 +1,43 @@
 .RightSidePanel {
-    width: 40px;
-position: fixed;
-bottom: 0px;
-left: 40px;
-right: auto;
-z-index: 10;
-
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
 }
 
 .SocialContacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 .SocialContacts li {
-    margin: .75em
+  margin: 0.75em;
 }
 
-
 .SocialContacts li:hover {
-color: #71eccbe4;
-transform: translateY(-10px);
+  color: #71eccbe4;
+  transform: translateY(-10px);
 }
 
 .SocialContacts li a {
-    display: inline-block;
-    text-decoration: none;
-    /* text-decoration-skip-ink: auto; */
-    color: inherit;
-    position: relative;
+  display: inline-block;
+  text-decoration: none;
+  /* text-decoration-skip-ink: auto; */
+  color: inherit;
+  position: relative;
 }
 
 .SocialContacts::after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 90px;
-    margin: 0px auto;
-    background-color:  #52b69a;
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #52b69a;
 }
-
