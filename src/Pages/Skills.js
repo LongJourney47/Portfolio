@@ -35,10 +35,10 @@ const Skills = () => {
 
             <p className={Styles.CardContent}>
               {" "}
-              As the first programming language I learned I have gained most of
-              my expierence with coding using this. Creating and expirmenting
-              with a array of projects/functionalities that can be further
-              explored on my project page.{" "}
+              Being my first programming language, I have gained most of my
+              expierence with coding using this. Creating and expirmenting with
+              a array of projects/functionalities. Providing a great foundation
+              to my coding journey. Seeing frequent use in my projects.{" "}
             </p>
           </li>
 
@@ -59,10 +59,10 @@ const Skills = () => {
             </div>
             <p className={Styles.CardContent}>
               {" "}
-              This section will simply be some placeholder text to assess if the
-              spacing is ideal. Next part is to test the functionality of added
-              code that should hide content when it reaches the sixth line
-              within the specified space provided.
+              Being one of the first tools I used along side Javascript and it
+              being easy to learn. I have aquired a firm foundation when using
+              html in my project. Although, I write more now in js.files than
+              dedicated html files due to my current background in React.
             </p>
           </li>
 
@@ -83,10 +83,10 @@ const Skills = () => {
             </div>
             <p className={Styles.CardContent}>
               {" "}
-              This section will simply be some placeholder text to assess if the
-              spacing is ideal. Next part is to test the functionality of added
-              code that should hide content when it reaches the sixth line
-              within the specified space provided.
+              In my journey, I have met people who either love or hate CSS. For
+              me, I absolutely love writing in CSS. Becoming one of my favorite
+              parts when building an application. It also helps that I have a
+              extensive background in CSS3 as seen with this portfolio.
             </p>
           </li>
 
@@ -164,10 +164,10 @@ const Skills = () => {
             </div>
             <p className={Styles.CardContent}>
               {" "}
-              This section will simply be some placeholder text to assess if the
-              spacing is ideal. Next part is to test the functionality of added
-              code that should hide content when it reaches the sixth line
-              within the specified space provided.
+              Python has provided an excellent
+              expierence so far. Learning more about the backend has been very
+              interesting. A pleasant challenge compared to my time with
+              frontend development. Plan to have a project out showcasing my knowledge more.
             </p>
           </li>
 
@@ -185,10 +185,10 @@ const Skills = () => {
             </div>
             <p className={Styles.CardContent}>
               {" "}
-              This section will simply be some placeholder text to assess if the
-              spacing is ideal. Next part is to test the functionality of added
-              code that should hide content when it reaches the sixth line
-              within the specified space provided.
+              A simple/straight forward language, postgresql has been a great
+              expierence working with. Specfically when manipulating large
+              amounts of data and navigating through it all. I hope to have a
+              project done soon showcasing all that I learned.
             </p>
           </li>
 
@@ -206,10 +206,10 @@ const Skills = () => {
             </div>
             <p className={Styles.CardContent}>
               {" "}
-              This section will simply be some placeholder text to assess if the
-              spacing is ideal. Next part is to test the functionality of added
-              code that should hide content when it reaches the sixth line
-              within the specified space provided.
+              beginning my journey, GIT to me has always seemed like a tool any
+              software developer can benefit from. Although, I can't directly
+              display my proficiency with the tool. I always make a note to use
+              it whenever I am working with an application.
             </p>
           </li>
         </ul>
