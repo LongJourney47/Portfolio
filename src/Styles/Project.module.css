@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 .Projects {
@@ -17,6 +18,7 @@
 .ProjectRightSide,
 .ProjectLeftSide {
   margin: 2em 0em 5em;
+  font-size: 1.2em;
 }
 .Projects h3 {
   font-size: 1.5em;
@@ -49,7 +51,7 @@
   text-align: right;
 }
 
-.Projectcontainer {
+.ProjectContainer {
   display: flex;
 }
 
@@ -68,7 +70,7 @@
 .RideSideText {
   box-shadow: 0 10px 30px -15px rgb(36, 36, 40);
   position: relative;
-  /* z-index: 2; */
+  z-index: 2;
   padding: 25px;
   display: flex;
   right: 100px;
@@ -88,6 +90,41 @@
 
 .Placeholder:visited {
   color: #71eccbe4;
+}
+
+.DiscriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectTechRightSide {
+  position: relative;
+  z-index: 2;
+  margin: 1em;
+  display: flex;
+  top: 3em;
+  border-radius: 5px;
+  justify-content: space-between;
+  width: 78%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  font-weight: 700;
+  right: 3%;
+}
+
+.ProjectTechLeftSide {
+  position: relative;
+  z-index: 2;
+  margin: 1em;
+  display: flex;
+  top: 3em;
+  border-radius: 5px;
+  justify-content: space-between;
+  width: 78%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  font-weight: 700;
+  left: 7%;
 }
 
 /* .TechUsed {

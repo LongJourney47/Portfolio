@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 hr {
@@ -11,15 +12,11 @@ hr {
 }
 
 .TechSkills {
-  /* border: 2px solid red; */
-  /* display: flex;
-    justify-content: center; */
   margin: 0 auto;
   padding: 0em;
-  width: 70%;
+  width: 80%;
   display: block;
   height: 100%;
-  /* align-content: center; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +31,6 @@ hr {
   display: inline;
   position: relative;
   padding: 0.5em;
-  /* margin:0.5em; */
   margin: 1em 0.5em 1em;
   width: 25%;
   height: 60%;
@@ -43,8 +39,7 @@ hr {
 .InfoCard {
   flex-direction: column;
   display: flex;
-  font-size: 13px;
-
+  font-size: 22px;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -61,12 +56,13 @@ hr {
   padding: 0.4em;
   font-family: "Courier New", Courier, monospace;
   border-radius: 5px 5px 0 0;
+  font-size: 1.5em;
 }
 
 .Technology p {
   background-color: #343a40;
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   padding: 0.5em;
   line-height: 1.2;
   border-radius: 0 0 5px 5px;
@@ -90,7 +86,6 @@ hr {
   border-radius: 5px;
   padding: 5px 0;
   transition: opacity 2s ease-in-out;
-
   position: absolute;
   z-index: 1;
   right: 99%;
