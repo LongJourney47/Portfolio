@@ -14,8 +14,8 @@ const Projects = () => {
       <section className={Styles.Projects}>
         <ul>
           <li className={Styles.ProjectLeftSide}>
-            <h3>Expense Tracker</h3>
-            <div className={Styles.Projectcontainer}>
+            <h3>Chat Application</h3>
+            <div className={Styles.ProjectContainer}>
               <span className={Styles.ProjectImage}>
                 <img width="650" height="420" src={MyChat}></img>
               </span>
@@ -25,6 +25,16 @@ const Projects = () => {
                   This is placeholder text to test spacing and how the text
                   itself is presented on the page.
                 </p>
+
+                <ul className={Styles.ProjectTechRightSide}>
+                  <li>React</li>
+                  <li>FireBase</li>
+                  <li>Bootstrap</li>
+                  <li>SCSS</li>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>HTML</li>
+                </ul>
               </span>
             </div>
           </li>
@@ -32,12 +42,20 @@ const Projects = () => {
           <li className={Styles.ProjectRightSide}>
             <h3>To-do List</h3>
 
-            <div className={Styles.Projectcontainer}>
+            <div className={Styles.ProjectContainer}>
               <span className={Styles.DiscriptionContainer}>
                 <p className={Styles.LeftSideText}>
                   This is placeholder text to test spacing and how the text
                   itself is presented on the page.
                 </p>
+
+                <ul className={Styles.ProjectTechLeftSide}>
+                  <li>React</li>
+                  <li>AirTable</li>
+                  <li>CSS Modules</li>
+                  <li>Javascript</li>
+                  <li>HTML</li>
+                </ul>
               </span>
 
               <span className={Styles.ProjectImage}>
@@ -48,7 +66,7 @@ const Projects = () => {
 
           <li className={Styles.ProjectLeftSide}>
             <h3>Expense Tracker</h3>
-            <div className={Styles.Projectcontainer}>
+            <div className={Styles.ProjectContainer}>
               <span className={Styles.ProjectImage}>
                 <img width="650" height="420" src={MyExpense}></img>
               </span>
@@ -58,18 +76,32 @@ const Projects = () => {
                   This is placeholder text to test spacing and how the text
                   itself is presented on the page.
                 </p>
+
+                <ul className={Styles.ProjectTechRightSide}>
+                  <li>React</li>
+                  <li>CSS Modules</li>
+                  <li>Javascript</li>
+                  <li>HTML</li>
+                </ul>
               </span>
             </div>
           </li>
 
           <li className={Styles.ProjectRightSide}>
             <h3>Movie Assessment</h3>
-            <div className={Styles.Projectcontainer}>
+            <div className={Styles.ProjectContainer}>
               <span className={Styles.DiscriptionContainer}>
                 <p className={Styles.LeftSideText}>
                   This is placeholder text to test spacing and how the text
                   itself is presented on the page.
                 </p>
+
+                <ul className={Styles.ProjectTechLeftSide}>
+                  <li>CSS3</li>
+                  <li>Javascript</li>
+                  <li>HTML</li>
+                  <li>OMDb API</li>
+                </ul>
               </span>
 
               <span className={Styles.ProjectImage}>

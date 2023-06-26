@@ -32,13 +32,13 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <span>
+              
                 <li>
                   <Link className={Styles.LinkStyles} to="/Skills">
                     Skills{" "}
                   </Link>
                 </li>
-              </span>
+              
 
               <li>
                 <Link className={Styles.LinkStyles} to="/Projects">

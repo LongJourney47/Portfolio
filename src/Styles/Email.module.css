@@ -1,10 +1,4 @@
 .LeftSidePanel {
-  /* width: 40px;
-position: fixed;
-bottom: 0px;
-left: auto;
-right: 40px;
-z-index: 10; */
   bottom: 0px;
   left: auto;
   z-index: 10;
@@ -24,11 +18,9 @@ z-index: 10; */
   font-family: "Courier New", Courier, monospace;
   letter-spacing: 0.1em;
   writing-mode: vertical-rl;
-  /* text-decoration-style: none; */
-  /* font-size: 1em; */
-
   padding: 10px;
   margin: 20px auto;
+  font-size: 1.2em;
 }
 
 .Email a:link {
@@ -42,7 +34,6 @@ z-index: 10; */
 
 .Email a:hover {
   color: #71eccbe4;
-  /* height:5em; */
   transform: translateY(-10px);
 }
 
