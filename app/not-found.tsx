@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import NasaAstro from "@/app/Images/ErrorImage/nasa-astro.jpg";
 import ErrorRedirect from "./components/ErrorHandling/ErrorRedirect";
-// import styles from "./components/ErrorHandling/Styled404.module.css";
 
 const Error404 = ({ error }: { error: Error; reset: () => void }) => {
   useEffect(() => {
@@ -19,10 +18,11 @@ const Error404 = ({ error }: { error: Error; reset: () => void }) => {
         objectFit="cover"
         placeholder="blur"
         quality={100}
+        loading="eager" 
       />
       <div className="relative z-10 text-center">
-        <h1 className="text-white text-5xl mb-5">404</h1>
-        <p className="text-white text-lg">
+        <h1 className="text-white text-6xl font-bold mb-5 animate-trackingExpandFwdTop">404</h1>
+        <p className="text-white text-lg animate-trackingInContact">
           Page Not Found! Seems you went way too far out. Let's try to get you
           back on track by{' '}
           <ErrorRedirect />
