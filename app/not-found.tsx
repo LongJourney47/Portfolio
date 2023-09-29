@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import NasaAstro from "@/app/Images/ErrorImage/nasa-astro.jpg";
+import NasaWorldNetwork from "@/app/Images/ErrorImage/nasa-world-network.jpg";
+
 import ErrorRedirect from "./components/ErrorHandling/ErrorRedirect";
 
 const Error404 = ({ error }: { error: Error; reset: () => void }) => {
@@ -13,7 +14,7 @@ const Error404 = ({ error }: { error: Error; reset: () => void }) => {
     <div className="bg-black flex flex-col items-center justify-center h-screen overflow-hidden relative">
       <Image
         alt="Astronaut floating in Space"
-        src={NasaAstro}
+        src={NasaWorldNetwork}
         layout="fill"
         objectFit="cover"
         placeholder="blur"
@@ -21,7 +22,7 @@ const Error404 = ({ error }: { error: Error; reset: () => void }) => {
         loading="eager" 
       />
       <div className="relative z-10 text-center">
-        <h1 className="text-white text-6xl font-bold mb-5 animate-trackingExpandFwdTop">404</h1>
+        <h1 className="text-white text-7xl font-bold mb-5 animate-trackingExpandFwdTop">404</h1>
         <p className="text-white text-lg animate-trackingInContact">
           Page Not Found! Seems you went way too far out. Let's try to get you
           back on track by{' '}
