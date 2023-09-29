@@ -1,0 +1,38 @@
+/* YourCSSFile.module.css */
+
+/* @keyframes trackinTop {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes trackInContract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.trackinTop {
+  animation: trackinTop 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.trackInContract {
+  animation: trackInContract 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+} */

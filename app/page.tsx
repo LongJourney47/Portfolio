@@ -11,7 +11,7 @@ export default function Home() {
   <main >
       <div >
         <header >
-          <h1 >William Cook Fernandez</h1>
+          <h1 className="text-red-500">William Cook Fernandez</h1>
           <h2 >An architect of the web</h2>
         </header>
 

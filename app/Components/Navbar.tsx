@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Navbar.module.css";
-import Email from "Components/Email";
-import Social from "Components/Social";
+import Email from "@/app/components/Email";
+import Social from "@/app/components/Social";
 import { TbLetterW } from "react-icons/tb";
 import { IconContext } from "react-icons";
 
