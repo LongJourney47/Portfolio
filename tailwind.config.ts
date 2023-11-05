@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans'],
+        bebas: ['Bebas Neue', 'sans'],
+      },
       keyframes: {
         trackingInContact: {
           "0%": {
@@ -42,12 +46,15 @@ const config: Config = {
           "trackingExpandFwdTop 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both",
         trackingInContact:
           "trackingInContact 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both",
+        pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+
     },
   },
   plugins: [],
