@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans'],
+        bebas: ['Bebas Neue', 'sans'],
+      },
       keyframes: {
         trackingInContact: {
           "0%": {
@@ -48,6 +52,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+
     },
   },
   plugins: [],
