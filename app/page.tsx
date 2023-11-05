@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import Journey from "@/app/Images/journey.jpg";
@@ -7,10 +7,17 @@ import Social from "@/app/Components/Social";
 
 export default function Home() {
   const [isExpanded, setExpanded] = useState(false);
+  const [isPulsating, setPulsating] = useState(false);
 
   const toggleExpansion = () => {
     setExpanded(!isExpanded);
+    setPulsating(false);
   };
+
+  const iconExpansion = () => {
+    setPulsating(true);
+  };
+
   return (
     <>
       <Image
@@ -37,7 +44,9 @@ export default function Home() {
               <a className="hover:line-through">about</a>
               <a className="hover:line-through">work</a>
               <a className="hover:line-through">projects</a>
-              <div className="hover:line-through">contact</div>
+              <div className="hover:line-through" onClick={iconExpansion}>
+                contact
+              </div>
             </nav>
 
             {/* <progress></progress> */}
@@ -60,17 +69,19 @@ export default function Home() {
             <aside><Social/></aside>
           </div> */}
           <div className="w-12 h-12">
-            <div
-              className="absolute right-0 bottom-0 w-12 h-12 cursor-pointer mb-5 mr-5"
-             
-            >
-              {/* Your image */}
-              <Image
-                alt="network globe icon"
-                src={Globe}
-                className="w-12 h-12 "
-                onClick={toggleExpansion}
-              />
+            <div className="absolute right-0 bottom-0 w-12 h-12 cursor-pointer mb-5 mr-5">
+              <div
+                className={`w-12 h-12 relative mb-5 mr-5 ${
+                  isPulsating ? "animate-pulse" : ""
+                }`}
+              >
+                <Image
+                  alt="network globe icon"
+                  src={Globe}
+                  className="w-12 h-12"
+                  onClick={toggleExpansion}
+                />
+              </div>
             </div>
             {isExpanded && (
               <aside className=" absolute  right-0 bottom-[24%] mb-5 mr-6 w-10 bg-white bg-opacity-10 backdrop-blur-sm p-2 transition-all transform translate-y-full br-5 rounded-md ...">
