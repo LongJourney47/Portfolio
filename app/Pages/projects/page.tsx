@@ -1,16 +1,18 @@
+"use client";
 import React from "react";
 import Styles from "../Styles/Project.module.css";
-import MyToDo from "../Images/Project-Images/Capture-todo-list.PNG";
-import MyExpense from "../Images/Project-Images/Capture-expense-tracker.PNG";
-import MyMovie from "../Images/Project-Images/Capture-movie-project.PNG";
-import MyChat from "../Images/Project-Images/Capture-chat-app-signinpage.PNG";
-import MyBook from "../Images/Project-Images/Capture-book-inventory.PNG";
+// import MyToDo from "../Images/Project-Images/Capture-todo-list.PNG";
+// import MyExpense from "../Images/Project-Images/Capture-expense-tracker.PNG";
+// import MyMovie from "../Images/Project-Images/Capture-movie-project.PNG";
+// import MyChat from "../Images/Project-Images/Capture-chat-app-signinpage.PNG";
+// import MyBook from "../Images/Project-Images/Capture-book-inventory.PNG";
 // import './src/App.css'
 
 const Projects = () => {
   return (
     <>
-      <h2 className={Styles.PTitle}>Featured Projects</h2>
+    <section className="min-h-screen bg-red-500"></section>
+      {/* <h2 className={Styles.PTitle}>Featured Projects</h2>
       <hr></hr>
       <section className={Styles.Projects}>
         <ul>
@@ -164,7 +166,7 @@ const Projects = () => {
             </div>
           </li>
         </ul>
-      </section>
+      </section> */}
     </>
   );
 };

@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 
 const About = () => {
   return (
     <>
-      <h2>About page</h2>
+      <section className="min-h-screen bg-blue-500"></section>
     </>
   );
 };

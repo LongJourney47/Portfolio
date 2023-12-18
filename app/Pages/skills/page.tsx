@@ -1,18 +1,20 @@
+"use client";
 import React from "react";
-import Styles from "../Styles/Skills.module.css";
-import myJSSvg from "../Images/Svg/javascript-logo.svg";
-import myHTMLSvg from "../Images/Svg/html-5-logo.svg";
-import myCSSSvg from "../Images/Svg/css-3-logo.svg";
-import myReactSvg from "../Images/Svg/react-logo.svg";
-import myFirebaseSvg from "../Images/Svg/firebase-logo.svg";
-import myPythonSvg from "../Images/Svg/python-logo.svg";
-import myPostgreSQLSvg from "../Images/Svg/postgresql-logo.svg";
-import myGitSvg from "../Images/Svg/git-logo.svg";
+// import Styles from "../Styles/Skills.module.css";
+// import myJSSvg from "../Images/Svg/javascript-logo.svg";
+// import myHTMLSvg from "../Images/Svg/html-5-logo.svg";
+// import myCSSSvg from "../Images/Svg/css-3-logo.svg";
+// import myReactSvg from "../Images/Svg/react-logo.svg";
+// import myFirebaseSvg from "../Images/Svg/firebase-logo.svg";
+// import myPythonSvg from "../Images/Svg/python-logo.svg";
+// import myPostgreSQLSvg from "../Images/Svg/postgresql-logo.svg";
+// import myGitSvg from "../Images/Svg/git-logo.svg";
 
 const Skills = () => {
   return (
     <>
-      <h2 className={Styles.TSTitle}>Technical Skills</h2>
+    <section className="min-h-screen bg-green-500"></section>
+      {/* <h2 className={Styles.TSTitle}>Technical Skills</h2>
       <hr></hr>
 
       <section className={Styles.TechSkills}>
@@ -213,7 +215,7 @@ const Skills = () => {
             </p>
           </li>
         </ul>
-      </section>
+      </section> */}
     </>
   );
 };
