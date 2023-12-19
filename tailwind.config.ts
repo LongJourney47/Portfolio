@@ -8,11 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        cBrown: "#65451F"
+      },
       fontFamily: {
         roboto: ['Roboto', 'sans'],
         bebas: ['Bebas Neue', 'sans'],
       },
       keyframes: {
+        cardFlipTopFwd: {
+          '0%': {
+            transform: 'translateY(0) translateZ(0) rotateX(0)',
+            transformOrigin: '50% 0%',
+          },
+          '100%': {
+            transform: 'translateX(-100%) translateZ(-160px) rotateY(-180deg)',
+            transformOrigin: '50% 100%',
+          },
+        },
         trackingInContact: {
           "0%": {
             letterSpacing: "1em",
@@ -47,6 +60,7 @@ const config: Config = {
         trackingInContact:
           "trackingInContact 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both",
         pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        cardFlipTopFwd: 'cardFlipTopFwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

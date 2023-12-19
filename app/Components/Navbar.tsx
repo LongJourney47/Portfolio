@@ -1,81 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Styles from "../Styles/Navbar.module.css";
-import Email from "@/app/components/Email";
-import Social from "@/app/components/Social";
-import { TbLetterW } from "react-icons/tb";
-import { IconContext } from "react-icons";
+'use client'
+import React, { useState } from "react";
+
 
 const Navbar = () => {
+
+  // const [isExpanded, setExpanded] = useState(false);
+  // const [isPulsating, setPulsating] = useState(false);
+
+  // const toggleExpansion = () => {
+  //   setExpanded(!isExpanded);
+  //   setPulsating(false);
+  // };
+
+  // const iconExpansion = () => {
+  //   setPulsating(true);
+  // };
   return (
     <>
-      <header>
-        <nav className={Styles.Navbar}>
-          <aside className={Styles.Title}>
-            <span>
-              <IconContext.Provider value={{ size: "2em", color: "#71eccbe4" }}>
-                <TbLetterW className={Styles.Wletter} />
-              </IconContext.Provider>
-            </span>
-          </aside>
-          <aside className={Styles.Links}>
-            <ul>
-              {/* <li>
-                <Link className={Styles.LinkStyles} to="/">
-                  Home
-                </Link>
-              </li>
+      <header className="text-black-500 flex justify-between backdrop-blur-sm z-10 pb-5 pt-5 bg-white bg-opacity-10 ">
+            <div className="w-1/2 flex pl-5">
+              <h1 className="pr-5 font-roboto text-[1.1em]">
+                William Cook Fernandez
+              </h1>
+              <h2 className="text-[1.1em]">Frontend Web Developer</h2>
+            </div>
 
-              <li>
-                <Link className={Styles.LinkStyles} to="/About">
-                  About {" "}
-                </Link>
-              </li>
-
-              
-                <li>
-                  <Link className={Styles.LinkStyles} to="/Skills">
-                    Skills{" "}
-                  </Link>
-                </li>
-              
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/Projects">
-                  Projects{" "}
-                </Link>
-              </li> */}
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/">
-                  Home
-                </Link>
-              </li>
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/About">
-                  About{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/Skills">
-                  Skills{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/Projects">
-                  Projects{" "}
-                </Link>
-              </li>
-            </ul>
-          </aside>
-        </nav>
-      </header>
-
-      <Email />
-      <Social />
+            <nav className="flex space-x-2 pr-5">
+              <a className="hover:line-through">about</a>
+              <a className="hover:line-through">work</a>
+              <a className="hover:line-through">projects</a>
+              {/* <div className="hover:line-through" onClick={iconExpansion}>
+                contact
+              </div> */}
+            </nav>
+          </header>
+          <div className=" border-t mr-5 ml-5 border-solid border-opacity-50 border-taupe-300"></div>
     </>
   );
 };

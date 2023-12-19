@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div className="min-h-screen ">
       <Image
         alt="wood desk with laptop and other tech items laid out"
         src={Journey}
@@ -30,9 +30,9 @@ export default function Home() {
         loading="eager"
       ></Image>
 
-      <section className="absolute text-white z-10 w-full  h-full">
+      <section className="absolute text-white z-10 w-full h-full">
         <div>
-          <header className="text-black-500 flex justify-between backdrop-blur-sm  pb-5 pt-5 bg-white bg-opacity-10 ">
+          {/* <header className="text-black-500 flex justify-between backdrop-blur-sm  pb-5 pt-5 bg-white bg-opacity-10 ">
             <div className="w-1/2 flex pl-5">
               <h1 className="pr-5 font-roboto text-[1.1em]">
                 William Cook Fernandez
@@ -48,8 +48,8 @@ export default function Home() {
                 contact
               </div>
             </nav>
-          </header>
-          <div className=" border-t mr-5 ml-5 border-solid border-opacity-50 border-taupe-300"></div>
+          </header> */}
+          {/* <div className=" border-t mr-5 ml-5 border-solid border-opacity-50 border-taupe-300"></div> */}
 
           <div className="absolute left-0 bottom-[24%] mb-5 ml-5 max-w-3xl max-h-52 text-7xl font-serif font-bold">
             An architect of <br /> the web
@@ -84,6 +84,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
