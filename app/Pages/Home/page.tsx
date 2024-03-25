@@ -1,11 +1,11 @@
-"use client";
 import React, { useState, useEffect, useRef } from "react";
+// import Layout from '../Layout';
 import Image from "next/image";
 import Journey from "@/app/Images/journey.jpg";
 import Globe from "@/app/Images/Svg/globe.svg";
 import Social from "@/app/Components/Social";
 
-export default function Home() {
+const Home: React.FC = () => {
   const [isExpanded, setExpanded] = useState(false);
   const [isPulsating, setPulsating] = useState(false);
 
@@ -19,6 +19,7 @@ export default function Home() {
   };
 
   return (
+    // <Layout>
     <div className="min-h-screen ">
       <Image
         alt="wood desk with laptop and other tech items laid out"
@@ -85,5 +86,8 @@ export default function Home() {
         </div>
       </section>
     </div>
+    // </Layout>
   );
-}
+};
+
+export default Home;

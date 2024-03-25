@@ -1,12 +1,18 @@
-"use client";
-// import React from "react";
+// components/Layout.tsx
+// import React, { ReactNode } from 'react';
+// import Navbar from '../Components/Navbar';
 
-// import Navbar from "../Components/Navbar";
+// interface LayoutProps {
+//     children: ReactNode;
+//   }
 
-// export default function PagesLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return <Navbar> {children}</Navbar>;
-// }
+//   const Layout: React.FC<LayoutProps> = ({ children }) => {
+//   return (
+//     <div>
+//       <Navbar />
+//       <main>{children}</main>
+//     </div>
+//   );
+// };
+
+// export default Layout;
