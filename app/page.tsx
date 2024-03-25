@@ -5,27 +5,13 @@ import Image from "next/image";
 import Journey from "@/app/Images/journey.jpg";
 import Globe from "@/app/Images/Svg/globe.svg";
 import Social from "@/app/Components/Social";
+import GlobeIcon from "./Components/GlobeIcon";
 import About from "./Pages/About/page";
 import Projects from "./Pages/Projects/page";
 import Skills from "./Pages/Skills/page";
 import Home from "./Pages/Home/page";
-// import Layout from "./Pages/Layout";
-import type { AppProps } from "next/app";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
-  // const [isExpanded, setExpanded] = useState(false);
-  // const [isPulsating, setPulsating] = useState(false);
-
-  // const toggleExpansion = () => {
-  //   setExpanded(!isExpanded);
-  //   setPulsating(false);
-  // };
-
-  // const iconExpansion = () => {
-  //   setPulsating(true);
-  // };
-
-  // ...
+export default function MyApp() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -37,13 +23,12 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       });
     })();
   }, []);
-  // ...
 
   return (
     <div>
       <Navbar></Navbar>
+      <GlobeIcon></GlobeIcon>
       <main className="flex flex-col gap-20">
-        {/* <Component {...pageProps} /> */}
         <Home />
 
         <About />
