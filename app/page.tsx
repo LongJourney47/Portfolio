@@ -30,7 +30,6 @@ export default function MyApp() {
       <GlobeIcon></GlobeIcon>
       <main className="flex flex-col gap-20">
         <Home />
-
         <About />
         <Projects />
         <Skills />

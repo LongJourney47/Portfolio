@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   useEffect(() => {
@@ -32,9 +33,15 @@ const Navbar = () => {
         </div>
 
         <nav className="flex space-x-2 pr-5">
-          <a className="hover:line-through">about</a>
-          <a className="hover:line-through">work</a>
-          <a className="hover:line-through">projects</a>
+          <Link href="/About/page" className=" hover:bg-sky-700 !important">
+            about
+          </Link>
+          <Link href="/Work/page" className="hover:line-through">
+            work
+          </Link>
+          <Link href="#projects" passHref className="hover:line-through">
+            projects
+          </Link>
           <div className="hover:line-through">contact</div>
         </nav>
       </header>
@@ -42,7 +49,7 @@ const Navbar = () => {
         id="scrollProgressBar"
         max="100"
         value="0"
-        className=" pl-5 pr-5 fixed top-16 z-10 w-full h-[1px] appearance-none left-0 border-none bottom--1 bg-transparent text-white"
+        className="ml-5 fixed top-16 z-10 w-[94.5%] h-[2px] appearance-none border-none bg-white bg-opacity-20"
       >
         {" "}
         <style jsx>{`
@@ -51,9 +58,11 @@ const Navbar = () => {
           }
           progress::-webkit-progress-value {
             background-color: white;
+            opacity: 0.5;
           }
           progress::-moz-progress-bar {
             background-color: white;
+            opacity: 0.5;
           }
         `}</style>
       </progress>

@@ -11,7 +11,7 @@ import React from "react";
 const Projects = () => {
   return (
     // <Layout>
-    <section className="min-h-screen bg-red-500"></section>
+    <section id="projects" className="min-h-screen bg-red-500"></section>
     // {/* <h2 className={Styles.PTitle}>Featured Projects</h2>
     // <hr></hr>
     // <section className={Styles.Projects}>
