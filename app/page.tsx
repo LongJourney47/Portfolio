@@ -25,7 +25,7 @@ export default function MyApp() {
   }, []);
 
   return (
-    <div>
+    <div className="p-5">
       <Navbar></Navbar>
       <GlobeIcon></GlobeIcon>
       <main className="flex flex-col gap-20">

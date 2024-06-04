@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         loading="eager"
       ></Image>
 
-      <section className="absolute text-white z-10 w-full h-full">
+      <section className="text-white z-10 w-full h-full">
         <div>
           <div className="absolute left-0 bottom-[24%] mb-5 ml-5 max-w-3xl max-h-52 text-7xl font-serif font-bold">
             An architect of <br /> the web

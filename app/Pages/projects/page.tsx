@@ -11,7 +11,88 @@ import React from "react";
 const Projects = () => {
   return (
     // <Layout>
-    <section id="projects" className="min-h-screen bg-red-500"></section>
+    <section id="projects" className="min-h-screen bg-red-500">
+      <p className="text-xl">
+        Schwartz was his own greatest subject and saw poems as vehicles for
+        self-mythologization. His artistic merits melded with his personal ones,
+        and his poetic failures are but the shameful, dark mirror of his
+        foibles. His wit became bile, his intelligence pedantry, his honesty a
+        reflexive brutality: “Thus will he pay the dialectical price; / Each
+        virtue when too swollen is a vice!” And so followed the entwined erosion
+        of both his personal fortunes and the quality of his verse. In true
+        tragic fashion, Schwartz’s decline was largely self-inflicted. The
+        exuberant imagination that buoyed his early poems was no less vigorous
+        but redirected toward the paranoiac fantasy and harebrained scheming
+        that made him a pariah; keen observation curdled into gratuitous malice;
+        unflinching self-analysis lapsed first into stultifying anxiety and then
+        into a bog of cosmic self-pity. For all that Schwartz immersed himself
+        in his major forebear, T.S. Eliot, he ultimately foreswore that poet’s
+        gospel of impersonality and instead shipwrecked himself upon the shores
+        of the ego: “Aut Caesar aut nullus! cries all egotism, / And cannot bear
+        another’s criticism.” He fell prey to the cardinal sin for a poet:
+        sentimentality.
+      </p>
+      <p className="text-xl">
+        Schwartz was his own greatest subject and saw poems as vehicles for
+        self-mythologization. His artistic merits melded with his personal ones,
+        and his poetic failures are but the shameful, dark mirror of his
+        foibles. His wit became bile, his intelligence pedantry, his honesty a
+        reflexive brutality: “Thus will he pay the dialectical price; / Each
+        virtue when too swollen is a vice!” And so followed the entwined erosion
+        of both his personal fortunes and the quality of his verse. In true
+        tragic fashion, Schwartz’s decline was largely self-inflicted. The
+        exuberant imagination that buoyed his early poems was no less vigorous
+        but redirected toward the paranoiac fantasy and harebrained scheming
+        that made him a pariah; keen observation curdled into gratuitous malice;
+        unflinching self-analysis lapsed first into stultifying anxiety and then
+        into a bog of cosmic self-pity. For all that Schwartz immersed himself
+        in his major forebear, T.S. Eliot, he ultimately foreswore that poet’s
+        gospel of impersonality and instead shipwrecked himself upon the shores
+        of the ego: “Aut Caesar aut nullus! cries all egotism, / And cannot bear
+        another’s criticism.” He fell prey to the cardinal sin for a poet:
+        sentimentality.
+      </p>
+      <p className="text-xl">
+        Schwartz was his own greatest subject and saw poems as vehicles for
+        self-mythologization. His artistic merits melded with his personal ones,
+        and his poetic failures are but the shameful, dark mirror of his
+        foibles. His wit became bile, his intelligence pedantry, his honesty a
+        reflexive brutality: “Thus will he pay the dialectical price; / Each
+        virtue when too swollen is a vice!” And so followed the entwined erosion
+        of both his personal fortunes and the quality of his verse. In true
+        tragic fashion, Schwartz’s decline was largely self-inflicted. The
+        exuberant imagination that buoyed his early poems was no less vigorous
+        but redirected toward the paranoiac fantasy and harebrained scheming
+        that made him a pariah; keen observation curdled into gratuitous malice;
+        unflinching self-analysis lapsed first into stultifying anxiety and then
+        into a bog of cosmic self-pity. For all that Schwartz immersed himself
+        in his major forebear, T.S. Eliot, he ultimately foreswore that poet’s
+        gospel of impersonality and instead shipwrecked himself upon the shores
+        of the ego: “Aut Caesar aut nullus! cries all egotism, / And cannot bear
+        another’s criticism.” He fell prey to the cardinal sin for a poet:
+        sentimentality.
+      </p>
+      <p className="text-xl">
+        Schwartz was his own greatest subject and saw poems as vehicles for
+        self-mythologization. His artistic merits melded with his personal ones,
+        and his poetic failures are but the shameful, dark mirror of his
+        foibles. His wit became bile, his intelligence pedantry, his honesty a
+        reflexive brutality: “Thus will he pay the dialectical price; / Each
+        virtue when too swollen is a vice!” And so followed the entwined erosion
+        of both his personal fortunes and the quality of his verse. In true
+        tragic fashion, Schwartz’s decline was largely self-inflicted. The
+        exuberant imagination that buoyed his early poems was no less vigorous
+        but redirected toward the paranoiac fantasy and harebrained scheming
+        that made him a pariah; keen observation curdled into gratuitous malice;
+        unflinching self-analysis lapsed first into stultifying anxiety and then
+        into a bog of cosmic self-pity. For all that Schwartz immersed himself
+        in his major forebear, T.S. Eliot, he ultimately foreswore that poet’s
+        gospel of impersonality and instead shipwrecked himself upon the shores
+        of the ego: “Aut Caesar aut nullus! cries all egotism, / And cannot bear
+        another’s criticism.” He fell prey to the cardinal sin for a poet:
+        sentimentality.
+      </p>
+    </section>
     // {/* <h2 className={Styles.PTitle}>Featured Projects</h2>
     // <hr></hr>
     // <section className={Styles.Projects}>
