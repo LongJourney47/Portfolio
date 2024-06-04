@@ -1,82 +1,95 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Styles from "../Styles/Navbar.module.css";
-import Email from "@/app/components/Email";
-import Social from "@/app/components/Social";
-import { TbLetterW } from "react-icons/tb";
-import { IconContext } from "react-icons";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
+  const [scrollStyles, setScrollStyles] = useState({
+    backdropFilter: "blur(0px)",
+    backgroundColor: "rgba(255, 255, 255, 0)",
+  });
+  // sets progression for the background on the navbar to add blur
+  const headerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollProgress =
+        ((document.documentElement.scrollTop || document.body.scrollTop) /
+          (document.documentElement.scrollHeight -
+            document.documentElement.clientHeight)) *
+        100;
+      const progressBar = document.getElementById("scrollProgressBar");
+      if (progressBar) {
+        progressBar.setAttribute("value", scrollProgress.toString());
+      }
+
+      const compressedProgress = compressScrollProgress(scrollProgress);
+
+      const blurValue = Math.min((compressedProgress / 100) * 4, 4);
+      const opacityValue = Math.min((compressedProgress / 100) * 0.1, 0.1);
+
+      setScrollStyles({
+        backdropFilter: `blur(${blurValue}px)`,
+        backgroundColor: `rgba(255, 255, 255, ${opacityValue})`,
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const compressScrollProgress = (progress: number) => {
+    const compressionFactor = 0.3;
+    return Math.pow(progress / 100, compressionFactor) * 100;
+  };
   return (
-    <>
-      <header>
-        <nav className={Styles.Navbar}>
-          <aside className={Styles.Title}>
-            <span>
-              <IconContext.Provider value={{ size: "2em", color: "#71eccbe4" }}>
-                <TbLetterW className={Styles.Wletter} />
-              </IconContext.Provider>
-            </span>
-          </aside>
-          <aside className={Styles.Links}>
-            <ul>
-              {/* <li>
-                <Link className={Styles.LinkStyles} to="/">
-                  Home
-                </Link>
-              </li>
+    <div className="mr-5 mx-auto">
+      <header
+        ref={headerRef}
+        style={scrollStyles}
+        className="text-white text-xl flex justify-between z-10 pb-8 pt-8 fixed top-0 w-[calc(100%-40px)] pr-10"
+      >
+        <div className="w-1/2 flex ">
+          <h1 className=" font-roboto text-[1.1em] mr-8 ">
+            William Cook Fernandez
+          </h1>
+          <h2 className="text-[1.1em]">Frontend Web Developer</h2>
+        </div>
 
-              <li>
-                <Link className={Styles.LinkStyles} to="/About">
-                  About {" "}
-                </Link>
-              </li>
-
-              
-                <li>
-                  <Link className={Styles.LinkStyles} to="/Skills">
-                    Skills{" "}
-                  </Link>
-                </li>
-              
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/Projects">
-                  Projects{" "}
-                </Link>
-              </li> */}
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/">
-                  Home
-                </Link>
-              </li>
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/About">
-                  About{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/Skills">
-                  Skills{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link className={Styles.LinkStyles} to="/Projects">
-                  Projects{" "}
-                </Link>
-              </li>
-            </ul>
-          </aside>
+        <nav className="flex space-x-2 ">
+          <Link href="#about" className="hover:line-through">
+            about
+          </Link>
+          <Link href="#work" className="hover:line-through">
+            work
+          </Link>
+          <Link href="#projects" passHref className="hover:line-through">
+            projects
+          </Link>
+          <div className="hover:line-through ">contact</div>
         </nav>
-      </header>
 
-      <Email />
-      <Social />
-    </>
+        <progress
+          id="scrollProgressBar"
+          max="100"
+          value="0"
+          className="absolute w-full h-[2px] bottom-0 appearance-none border-none bg-white bg-opacity-20"
+        >
+          {/* controls the color of the progress bar */}
+          <style jsx>{`
+            progress::-webkit-progress-bar {
+              background-color: transparent;
+            }
+
+            progress::-moz-progress-bar {
+              background-color: white;
+              opacity: 0.5;
+            }
+          `}</style>
+        </progress>
+      </header>
+    </div>
   );
 };
 
