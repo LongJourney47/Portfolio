@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./Components/Navbar";
-import Image from "next/image";
-import Journey from "@/app/Images/journey.jpg";
-import Globe from "@/app/Images/Svg/globe.svg";
-import Social from "@/app/Components/Social";
+// import Image from "next/image";
+// import Journey from "@/app/Images/journey.jpg";
+// import Globe from "@/app/Images/Svg/globe.svg";
+// import Social from "@/app/Components/Social";
 import GlobeIcon from "./Components/GlobeIcon";
 import About from "./Pages/About/page";
 import Projects from "./Pages/Projects/page";
