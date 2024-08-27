@@ -1,15 +1,27 @@
-import React, { useState } from "react";
-// import Layout from "../Layout";
+import React from "react";
+
+import CSSSvg from "../../Images/Svg/css-3-logo.svg";
+import JSSvg from "../../Images/Svg/javascript-logo.svg";
+import HTMLSvg from "../../Images/Svg/html-5-logo.svg";
+import ReactSvg from "../../Images/Svg/react-logo.svg";
+import FirebaseSvg from "../../Images/Svg/firebase-logo.svg";
+import PythonSvg from "../../Images/Svg/python-logo.svg";
+import NextPng from "../../Images/Next.js.png";
+import GitSvg from "../../Images/Svg/git-logo.svg";
+import TSSvg from "../../Images/Svg/typescript.svg";
+import TailwindSvg from "../../Images/Svg/tailwind.svg";
+import MaterialUISvg from "../../Images/Svg/material-ui.svg";
+import GolangSvg from "../../Images/Svg/golang.svg";
+import NodejsSvg from "../../Images/Svg/nodejs.svg";
+import MondoDBSvg from "../../Images/Svg/mongodb.svg";
+import FigmaSvg from "../../Images/Svg/figma.svg";
+
+import Image from "next/image";
 
 const About: React.FC = () => {
-  const handleCardFlip = () => {
-    console.log("Flip is triggered!!");
-  };
-
   return (
-    // <Layout>
     <section className="min-h-screen bg-cBrown text-white flex">
-      <div className="text-white-500 center mb-5 mr-5 max-w-[40%] text-[1.5em] font-roboto mt-[10%] ml-[40px]">
+      <div className="text-white-500 center mb-5 mr-5 max-w-[40%] text-[1.5em] font-roboto mt-[5%] ml-[40px]">
         <p className="mb-5">
           Before the begining to one of my longest & rewarding adventures back
           in 2021 I just finished college with a major in Psychology but wanted
@@ -34,25 +46,146 @@ const About: React.FC = () => {
         </p>
       </div>
 
-      <aside className="mt-[15%] text-white-500 w-full mb-5 mr-5 text-[1.5em] font-roboto border border-solid border-black">
-        <div className="text-white-500 flex h-full  mb-5 mr-5  text-[1.5em] font-roboto border border-solid border-white w-full">
-          <div
-            onClick={handleCardFlip}
-            className="rounded h-[45%] w-[18%] bg-blue-500 absolute right-[37%] border-solid border-black"
-          >
-            1
+      <aside className="mt-[1%] mr-[5%] ml-[5%] mb-[5%] text-white-500 w-full font-roboto border border-solid border-black">
+        <p className="flex justify-center text-[3em] mb-[3%]">
+          Techinical Expertise
+        </p>
+        <div className=" flex flex-wrap justify-between text-white-500 p-5 h-full text-[1.5em] font-roboto  w-full">
+          <div className="flex justify-center items-center glossy-bg rounded h-30 w-15 transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5">
+            <Image
+              className="z-10"
+              alt="css logo"
+              width="90"
+              height="90"
+              src={CSSSvg}
+            ></Image>
           </div>
-          <div className=" rounded h-[45%] w-[18%] bg-orange-500 absolute right-[25%] border-solid border-black">
-            2
+
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="html logo"
+              width="110"
+              height="110"
+              src={HTMLSvg}
+            ></Image>
           </div>
-          <div className="rounded h-[45%] w-[18%] bg-green-500  absolute right-[13%] border-solid border-black">
-            3
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110   mr-5 ml-5">
+            <Image
+              className="z-10"
+              alt="javascript logo"
+              width="90"
+              height="90"
+              src={JSSvg}
+            ></Image>
           </div>
-          <div
-            onClick={handleCardFlip}
-            className=" rounded h-[45%] w-[18%] bg-yellow-500  absolute right-[1%] border-solid border-black"
-          >
-            4
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="typescript logo"
+              width="100"
+              height="100"
+              src={TSSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="react.js logo"
+              width="100"
+              height="100"
+              src={ReactSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="next.js logo"
+              width="200"
+              height="200"
+              src={NextPng}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="node.js logo"
+              width="90"
+              height="90"
+              src={NodejsSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="go/golang logo"
+              width="200"
+              height="200"
+              src={GolangSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="tailwind logo"
+              width="100"
+              height="100"
+              src={TailwindSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="firebase logo"
+              width="90"
+              height="90"
+              src={FirebaseSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110  mr-5 ml-5">
+            <Image
+              className="z-10"
+              alt="material-ui logo"
+              width="100"
+              height="100"
+              src={MaterialUISvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110  mr-5 ml-5">
+            <Image
+              className="z-10"
+              alt="python logo"
+              width="100"
+              height="100"
+              src={PythonSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5 ">
+            <Image
+              className="z-10"
+              alt="css logo"
+              width="100"
+              height="100"
+              src={GitSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110  mr-5 ml-5">
+            <Image
+              className="z-10"
+              alt="mongodb logo"
+              width="170"
+              height="170"
+              src={MondoDBSvg}
+            ></Image>
+          </div>
+          <div className="flex justify-center items-center rounded h-30 w-15 glossy-bg transition-transform duration-200 ease-in-out hover:scale-110 mr-5 ml-5">
+            <Image
+              className="z-10"
+              alt="figma logo"
+              width="90"
+              height="90"
+              src={FigmaSvg}
+            ></Image>
           </div>
         </div>
       </aside>

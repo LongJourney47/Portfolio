@@ -19,14 +19,15 @@ const Error404 = ({ error }: { error: Error; reset: () => void }) => {
         objectFit="cover"
         placeholder="blur"
         quality={100}
-        loading="eager" 
+        loading="eager"
       />
       <div className="relative z-10 text-center">
-        <h1 className="text-white text-7xl font-bold mb-5 animate-trackingExpandFwdTop">404</h1>
+        <h1 className="text-white text-7xl font-bold mb-5 animate-trackingExpandFwdTop">
+          404
+        </h1>
         <p className="text-white text-lg animate-trackingInContact">
-          Page Not Found! Seems you went way too far out. Let's try to get you
-          back on track by{' '}
-          <ErrorRedirect />
+          Page Not Found! Seems you went way too far out. Lets try to get you
+          back on track by <ErrorRedirect />
         </p>
       </div>
     </div>

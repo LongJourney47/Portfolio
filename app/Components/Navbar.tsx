@@ -48,7 +48,7 @@ const Navbar = () => {
       <header
         ref={headerRef}
         style={scrollStyles}
-        className="text-white text-xl flex justify-between z-10 pb-8 pt-8 fixed top-0 w-[calc(100%-40px)] pr-10"
+        className="text-white text-xl z-[100] flex justify-between pb-8 pt-8 fixed top-0 w-[calc(100%-40px)] pr-10"
       >
         <div className="w-1/2 flex ">
           <h1 className=" font-roboto text-[1.1em] mr-8 ">
@@ -57,7 +57,7 @@ const Navbar = () => {
           <h2 className="text-[1.1em]">Frontend Web Developer</h2>
         </div>
 
-        <nav className="flex space-x-2 ">
+        <nav className="flex space-x-2">
           <Link href="#about" className="hover:line-through">
             about
           </Link>

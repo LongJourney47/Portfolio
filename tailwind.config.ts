@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -8,68 +9,44 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        "30": "25%",
+      },
+      width: {
+        "15": "15%",
+      },
       colors: {
-        cBrown: "#65451F",
+        cBrown: "#000000",
+        complementary: "#caf0f8",
       },
       fontFamily: {
         roboto: ["Roboto", "sans"],
         bebas: ["Bebas Neue", "sans"],
       },
-      keyframes: {
-        cardFlipTopFwd: {
-          "0%": {
-            transform: "translateY(0) translateZ(0) rotateX(0)",
-            transformOrigin: "50% 0%",
-          },
-          "100%": {
-            transform: "translateX(-100%) translateZ(-160px) rotateY(-180deg)",
-            transformOrigin: "50% 100%",
-          },
-        },
-        trackingInContact: {
-          "0%": {
-            letterSpacing: "1em",
-            opacity: "0",
-          },
-          " 40%": {
-            opacity: "0.6",
-          },
-          "100%": {
-            letterSpacing: "normal",
-            opacity: "1",
-          },
-        },
-        trackingExpandFwdTop: {
-          "0%": {
-            letterSpacing: "-0.6em",
-            transform: "translateZ(-700px) translateY(-500px)",
-            // opacity: 0,
-          },
-          "40%": {
-            // opacity: 0.6,
-          },
-          "100%": {
-            transform: "translateZ(0) translateY(0)",
-            // opacity: 1,
-          },
-        },
-      },
-      animation: {
-        trackingExpandFwdTop:
-          "trackingExpandFwdTop 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both",
-        trackingInContact:
-          "trackingInContact 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both",
-        pulse: "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        cardFlipTopFwd:
-          "cardFlipTopFwd 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        ".glossy-bg": {
+          position: "relative",
+          overflow: "hidden",
+          backgroundColor: "#260701",
+          "&::before": {
+            content: '""',
+            position: "absolute",
+            inset: "0",
+            backgroundImage:
+              "linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)",
+            filter: "blur(2px)",
+            opacity: "0.7",
+            pointerEvents: "none",
+          },
+        },
+      };
+
+      addUtilities(newUtilities);
+    }),
+  ],
 };
 export default config;
