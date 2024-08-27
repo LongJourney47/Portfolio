@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../Layout";
+// import Layout from "../Layout";
 // import Styles from "../Styles/Skills.module.css";
 // import myJSSvg from "../Images/Svg/javascript-logo.svg";
 // import myHTMLSvg from "../Images/Svg/html-5-logo.svg";
